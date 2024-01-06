@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/__Assets/Scenes/MenuScene.unity
     guid: 73b03a6c6a3e35f46bd027b6c1442566
   - enabled: 1
+    path: Assets/__Assets/Scenes/WitchHouseInteriorScene.unity
+    guid: 58235b4a12a792f4f97ba43ffc8bd1fc
+  - enabled: 1
     path: Assets/__Assets/Scenes/TownScene.unity
     guid: 44858b96c07423447bbe19c87c0aa378
   m_configObjects:

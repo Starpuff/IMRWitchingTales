@@ -7,6 +7,6 @@ public class MenuManagement : MonoBehaviour
 {
     public void StartButton()
     {
-        SceneManager.LoadScene("TownScene");
+        SceneManager.LoadScene("WitchHouseInteriorScene");
     }
 }

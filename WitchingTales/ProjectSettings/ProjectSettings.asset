@@ -136,7 +136,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 92fedcfa04004544a8077bbeeb1311ed, type: 2}
+  - {fileID: 2938341008009029111, guid: 45629b562b310174f9024abf95a25704, type: 2}
+  - {fileID: 11400000, guid: 32b95d2e88fbc1d41b9aac0f39c8a41c, type: 2}
+  - {fileID: -2617013263767864692, guid: 032be29a40762214ebc8c533f4dfdbcd, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -712,6 +716,7 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Android: USE_INPUT_SYSTEM_POSE_CONTROL
+    Server: 
     Standalone: USE_INPUT_SYSTEM_POSE_CONTROL
     Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL
   additionalCompilerArguments: {}
