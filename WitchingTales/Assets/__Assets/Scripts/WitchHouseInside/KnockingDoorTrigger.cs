@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KnockingDoorTrigger : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class KnockingDoorTrigger : MonoBehaviour
 
             // You can also set a timer to mute the audio after a specific duration if needed
             Invoke("MuteAudio", audioSource.clip.length);
+
         }
     }
 
