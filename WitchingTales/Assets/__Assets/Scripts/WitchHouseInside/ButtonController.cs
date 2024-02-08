@@ -16,12 +16,10 @@ public class ButtonController : MonoBehaviour
     {
         // Add a listener to the button's onClick event
         myButton.onClick.AddListener(OnButtonPressed);
-        Debug.Log("ButtonController.cs: Button listener added");
     }
 
     public void OnButtonPressed()
     {
-        Debug.Log("ButtonController.cs: Button pressed");
         // Check if there is TMP text above the button
         if (textAboveButton != null)
         {
