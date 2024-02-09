@@ -17,16 +17,28 @@ public class WaterSpell : MonoBehaviour
 
     public TextMeshProUGUI text;
 
+    public GameObject apple;
+
+    public GameObject holy;
+
+    public Canvas cauldronCanvas;
+
     int count = 0;
     public void Click()
     {
         audioSource.mute = false;
 
-        if (count <= 1)
+        if (count < 1)
         {
             water.SetActive(true);
             mix.SetActive(false);
             text.text = "Mix";
+        }
+        else if (count == 1)
+        {
+
+            Destroy(apple);
+            Destroy(holy);
         }
         else if (count == 2)
         {
@@ -34,11 +46,12 @@ public class WaterSpell : MonoBehaviour
             mix.SetActive(true);
             text.text = "Extract potion";
         }
-        else
+        else if (count == 3)
         {
             water.SetActive(false);
             mix.SetActive(false);
             potion.SetActive(true);
+            Destroy(cauldronCanvas);
         }
         audioSource.Play();
         count++;
