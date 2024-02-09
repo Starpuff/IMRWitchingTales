@@ -14,6 +14,13 @@ public class ButtonController : MonoBehaviour
 
     private void Start()
     {
+
+        string parameter = PlayerPrefs.GetString("LoadMode");
+        if (parameter == "1")
+        {
+            Destroy(canvas.gameObject);
+            return;
+        }
         // Add a listener to the button's onClick event
         myButton.onClick.AddListener(OnButtonPressed);
     }

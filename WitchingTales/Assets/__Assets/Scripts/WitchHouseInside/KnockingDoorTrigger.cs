@@ -10,6 +10,7 @@ public class KnockingDoorTrigger : MonoBehaviour
 
     private void Start()
     {
+
         // Make sure the audio source is initially muted
         audioSource.mute = true;
 
@@ -32,6 +33,13 @@ public class KnockingDoorTrigger : MonoBehaviour
         // Check if the collision is with the capsule collider
         if (collision.collider.CompareTag("KnockingDoorTriggerTag"))
         {
+
+            string parameter = PlayerPrefs.GetString("LoadMode");
+            if (parameter == "1")
+            {
+                Destroy(cubeObject);
+                return;
+            }
             // Unmute the audio source
             audioSource.mute = false;
 
