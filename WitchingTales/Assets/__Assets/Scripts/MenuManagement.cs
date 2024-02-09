@@ -8,5 +8,6 @@ public class MenuManagement : MonoBehaviour
     public void StartButton()
     {
         SceneManager.LoadScene("WitchHouseInteriorScene");
+        PlayerPrefs.SetString("LoadMode", "0");
     }
 }

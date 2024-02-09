@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - KnockingDoorTriggerTag
+  - GoOutsideCanvasTag
   layers:
   - Default
   - TransparentFX

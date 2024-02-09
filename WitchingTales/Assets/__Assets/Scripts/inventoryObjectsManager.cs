@@ -1,8 +1,10 @@
 using UnityEngine;
+using System.IO;
 
 public class inventoryObjectsManager : MonoBehaviour
 {
     public InventoryData inventoryData;
+    private string filePath;
 
     void Start()
     {
